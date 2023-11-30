@@ -12,41 +12,90 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
   cupertino_icons: ^1.0.6
+
+  #网络
   retrofit: ^4.0.3
   dio: ^5.3.4
   pretty_dio_logger: ^1.3.1
+
+  #状态管理
   riverpod: ^2.4.9
   hooks_riverpod: ^2.4.9
   flutter_riverpod: ^2.4.9
+
+  #设备信息
   device_info_plus: ^9.1.1
-  logger: ^2.0.2+1
+
+  #应用版本信息
   package_info_plus: ^5.0.1
+
+  #日志
+  logger: ^2.0.2+1
+
+  #图片加载
   cached_network_image: ^3.3.0
+
+  #URL相关，如：打开链接
+  #https://pub.dev/packages/url_launcher
   url_launcher: ^6.2.1
+
+  #本地存储文件的路径相关
+  #https://pub.dev/packages/path_provider
+  path_provider: ^2.1.1
+
+  #Dart常用工具类库。包含日期，正则，倒计时，时间轴等工具类
   common_utils: ^2.1.0
+
+  #路由
   go_router: ^12.1.1
+
+  #Dart数据类自动生成的注解
   freezed_annotation: ^2.4.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  #Flutter源代码静态分析器
   flutter_lints: ^3.0.1
+
+  #Flutter代码自动生成工具
+  build_runner: ^2.4.7
+
+  #Flutter资源文件管理类自动生成工具
+  flutter_gen_runner: ^5.3.2
+
+  #RiverPod自动生成辅助器
   custom_lint: ^0.5.7
   riverpod_lint: ^2.3.7
-  build_runner: ^2.4.7
+
+  #RiverPod代码自动生成工具
   riverpod_generator: ^2.3.9
-  flutter_gen_runner: ^5.3.2
+
+  #GoRouter代码自动生成工具
   go_router_builder: ^2.3.4
 
+  #Dart数据类与JSON互相转化类的自动生成工具
+  #https://pub.dev/packages/json_serializable
   json_serializable: ^6.7.1
+  #https://pub.dev/packages/freezed
   freezed: ^2.4.5
 
+  #更换项目包名工具
+  #https://pub.dev/packages/change_app_package_name
   change_app_package_name: ^1.1.0
 
 flutter:
   uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    - assets/
 
 

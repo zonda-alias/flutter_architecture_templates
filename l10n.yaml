@@ -1,0 +1,7 @@
+#ReadMe
+#https://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html
+#https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization#configuring-the-l10nyaml-file
+arb-dir: lib/core/localization
+template-arb-file: app_zh.arb
+output-localization-file: app_localizations.dart
+nullable-getter: false
