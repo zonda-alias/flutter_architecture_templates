@@ -1,4 +1,7 @@
 {
-  "appTitle":"Flutter architecture templates",
-  "netErrorMsg":"Connection exception,please try again later~"
+  "appTitle": "Flutter architecture templates",
+  "netErrorMsg": "Connection exception,please try again later~",
+  "homeTabName": "home",
+  "theatreTabName": "theatre",
+  "mineTabName": "mine"
 }

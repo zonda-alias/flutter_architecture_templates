@@ -1,4 +1,7 @@
 {
-  "appTitle":"Flutter架构模版",
-  "netErrorMsg":"网络加载异常，请稍后重试~"
+  "appTitle": "Flutter架构模版",
+  "netErrorMsg": "网络加载异常，请稍后重试~",
+  "homeTabName": "首页",
+  "theatreTabName": "剧场",
+  "mineTabName": "我的"
 }
