@@ -89,6 +89,9 @@ dev_dependencies:
   custom_lint: ^0.5.7
   riverpod_lint: ^2.3.7
 
+  #Retrofit代码自动生成工具
+  retrofit_generator: ^8.0.4
+
   #RiverPod代码自动生成工具
   riverpod_generator: ^2.3.9
 
