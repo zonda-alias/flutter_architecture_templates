@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_templates/core/routing/app_routers.dart';
 import 'package:flutter_architecture_templates/core/routing/router_configs.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class TemplatesPage extends ConsumerStatefulWidget {
+class TemplatesPage extends StatefulHookConsumerWidget {
   const TemplatesPage({
     super.key,
     required this.label,
@@ -29,6 +30,7 @@ class _TemplatesPageState extends ConsumerState<TemplatesPage> {
 
   @override
   Widget build(BuildContext context) {
+    useAutomaticKeepAlive();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,

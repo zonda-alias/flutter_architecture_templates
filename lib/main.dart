@@ -30,15 +30,18 @@ class MyApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       onGenerateTitle: (BuildContext context) => context.loc.appTitle,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blueAccent,
+          //surfaceVariant: Colors.transparent,
+        ),
         useMaterial3: true,
       ),
       routeInformationProvider:
-      ref.watch(appRouterProvider).routeInformationProvider,
-      routeInformationParser: ref.watch(appRouterProvider).routeInformationParser,
+          ref.watch(appRouterProvider).routeInformationProvider,
+      routeInformationParser:
+          ref.watch(appRouterProvider).routeInformationParser,
       routerDelegate: ref.watch(appRouterProvider).routerDelegate,
       builder: FlutterSmartDialog.init(),
     );
   }
 }
-

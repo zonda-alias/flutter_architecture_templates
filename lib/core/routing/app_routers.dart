@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture_templates/components/app_main/templates_detail_page.dart';
-import 'package:flutter_architecture_templates/core/routing/router_configs.dart';
+import 'package:flutter_architecture_templates/components/app_main/main_page2.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../components/app_main/main_page.dart';
-import '../../components/app_main/templates_page.dart';
+import '../../components/app_main/widgets/templates_detail_page.dart';
+import '../../components/app_main/widgets/templates_page.dart';
 import '../constants/restoration.dart';
+import 'router_configs.dart';
 
 part 'app_routers.g.dart';
 
@@ -108,4 +109,14 @@ class RequiredExtraRoute extends GoRouteData {
         label: $extra.label,
         bgColor: $extra.bgColor,
       );
+}
+
+@TypedGoRoute<AppMainRoute>(path: appMainPagePath)
+class AppMainRoute extends GoRouteData {
+  const AppMainRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const AppMainPage2();
+  }
 }

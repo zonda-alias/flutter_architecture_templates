@@ -7,7 +7,6 @@ import 'app_routers.dart';
 
 part 'router_configs.g.dart';
 
-
 ///首页
 const homeInMainPath = '/home';
 
@@ -16,6 +15,8 @@ const theatreInMainPath = '/theatre';
 
 ///我的
 const mineInMainPath = '/mine';
+
+const appMainPagePath = '/main';
 
 @Riverpod(keepAlive: true)
 RouteObserver appRouteObserver(AppRouteObserverRef ref) {
@@ -26,7 +27,7 @@ RouteObserver appRouteObserver(AppRouteObserverRef ref) {
 GoRouter appRouter(AppRouterRef ref) {
   return GoRouter(
     routes: $appRoutes,
-    initialLocation: homeInMainPath,
+    initialLocation: appMainPagePath,
     observers: [
       ref.watch(appRouteObserverProvider),
       FlutterSmartDialog.observer,
