@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_templates/core/constants/restoration.dart';
 import 'package:flutter_architecture_templates/core/localization/localizations_extensions.dart';
+import 'package:flutter_architecture_templates/core/remote/test_http_proxy_overrides.dart';
 import 'package:flutter_architecture_templates/core/routing/router_configs.dart';
 import 'package:flutter_architecture_templates/core/utils/logger_util.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
@@ -15,17 +16,8 @@ import 'core/utils/common.dart';
 void main() async {
   CustomFlutterBinding();
 
-  if (!kReleaseMode) {
-    WidgetsFlutterBinding.ensureInitialized();
-    await NativeProxyReader.proxySetting.then((settings) {
-      final proxyHost = settings.host;
-      if (proxyHost != null && settings.enabled) {
-        CustomProxy(ipAddress: proxyHost, port: settings.port).enable();
-      }
-    }).catchError((onError) {
-      logger.i('message onError ---> $onError ');
-    });
-  }
+  WidgetsFlutterBinding.ensureInitialized();
+  await setUpProxyIfNeed();
   setSystemBarStyle(targetBrightness: Brightness.dark);
   runApp(const ProviderScope(child: MyApp()));
 }
