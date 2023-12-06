@@ -72,6 +72,8 @@ dependencies:
   #https://pub.dev/packages/unsplash_client
   unsplash_client: ^2.1.1
 
+  native_flutter_proxy: ^0.1.15
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
