@@ -18,3 +18,12 @@ samples, guidance on mobile development, and a full API reference.
 flutter pub run change_app_package_name:main com.new.package.name
 
 flutter packages pub run build_runner build --delete-conflicting-outputs
+
+# https://fvm.app/documentation/guides/basic-commands
+fvm releases
+
+# https://docs.flutter.dev/release/upgrade
+fvm flutter pub upgrade --major-versions
+
+
+
