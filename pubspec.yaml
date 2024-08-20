@@ -87,6 +87,17 @@ dependencies:
   # google 提供的Json注解
   json_annotation: ^4.9.0
 
+  # 本地存储
+  drift: ^2.20.0
+  drift_flutter: ^0.2.0
+  shared_preferences: ^2.3.2
+
+  # 图片选择
+  image_picker: ^1.1.2
+
+  # 相机
+  camera: ^0.11.0+2
+
 dependency_overrides:
   # 集合工具类
   collection: ^1.19.0
@@ -122,6 +133,9 @@ dev_dependencies:
   json_serializable: ^6.8.0
   #https://pub.dev/packages/freezed
   freezed: ^2.5.7
+
+  #drift: 代码自动生成
+  drift_dev: ^2.20.0
 
   #更换项目包名工具
   #https://pub.dev/packages/change_app_package_name
