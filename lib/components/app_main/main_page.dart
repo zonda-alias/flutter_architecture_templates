@@ -22,7 +22,7 @@ class AppMainPage extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.favorite),
-            label: context.loc.theatreTabName,
+            label: context.loc.waybillTabName,
           ),
           BottomNavigationBarItem(
             icon: const Icon(Icons.settings),
