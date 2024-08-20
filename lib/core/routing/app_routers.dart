@@ -2,56 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture_templates/components/app_main/main_page2.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../components/app_main/main_page.dart';
 import '../../components/app_main/widgets/templates_detail_page.dart';
 import '../../components/app_main/widgets/templates_page.dart';
-import '../constants/restoration.dart';
 import 'router_configs.dart';
 
 part 'app_routers.g.dart';
-
-///主页
-@TypedStatefulShellRoute<MainShellRouteData>(
-  branches: <TypedStatefulShellBranch<StatefulShellBranchData>>[
-    TypedStatefulShellBranch<StatefulShellBranchData>(
-      routes: <TypedRoute<RouteData>>[
-        TypedGoRoute<HomeRouteData>(
-          path: homeInMainPath,
-        ),
-      ],
-    ),
-    TypedStatefulShellBranch<StatefulShellBranchData>(
-      routes: <TypedRoute<RouteData>>[
-        TypedGoRoute<TheatreRouteData>(
-          path: theatreInMainPath,
-        ),
-      ],
-    ),
-    TypedStatefulShellBranch<StatefulShellBranchData>(
-      routes: <TypedRoute<RouteData>>[
-        TypedGoRoute<MineRouteData>(
-          path: mineInMainPath,
-        ),
-      ],
-    ),
-  ],
-)
-class MainShellRouteData extends StatefulShellRouteData {
-  const MainShellRouteData();
-
-  static const String $restorationScopeId = mainRestorationScopeId;
-
-  @override
-  Widget builder(
-    BuildContext context,
-    GoRouterState state,
-    StatefulNavigationShell navigationShell,
-  ) {
-    return AppMainPage(
-      navigationShell: navigationShell,
-    );
-  }
-}
 
 class HomeRouteData extends GoRouteData {
   const HomeRouteData();
