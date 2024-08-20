@@ -24,7 +24,9 @@ dependencies:
 
   #状态管理
   riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
   hooks_riverpod: ^2.5.2
+  flutter_hooks: ^0.20.5
   flutter_riverpod: ^2.5.1
 
   #设备信息
@@ -56,6 +58,39 @@ dependencies:
   #Dart数据类自动生成的注解
   freezed_annotation: ^2.4.4
 
+  #瀑布流布局相关
+  #https://pub.dev/packages/flutter_staggered_animations
+  flutter_staggered_animations: ^1.1.1
+  #https://pub.dev/packages/flutter_staggered_grid_view
+  flutter_staggered_grid_view: ^0.7.0
+
+  #弹框组件
+  flutter_smart_dialog: ^4.9.8
+
+  #OnlyForTest 网络图片测试素材
+  #https://unsplash.com/oauth/applications/534840
+  #https://pub.dev/packages/unsplash_client
+  unsplash_client: ^2.2.0
+
+  # 代理
+  native_flutter_proxy: ^0.1.15
+
+  # Tab 懒加载
+  flutter_lazy_indexed_stack: ^0.0.6
+
+  #下拉刷新
+  easy_refresh: ^3.4.0
+
+  # 集合工具类
+  collection: ^1.19.0
+
+  # google 提供的Json注解
+  json_annotation: ^4.9.0
+
+dependency_overrides:
+  # 集合工具类
+  collection: ^1.19.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -73,6 +108,9 @@ dev_dependencies:
   custom_lint: ^0.6.5
   riverpod_lint: ^2.3.13
 
+  #Retrofit代码自动生成工具
+  retrofit_generator: ^8.2.0
+
   #RiverPod代码自动生成工具
   riverpod_generator: ^2.4.3
 
@@ -88,9 +126,6 @@ dev_dependencies:
   #更换项目包名工具
   #https://pub.dev/packages/change_app_package_name
   change_app_package_name: ^1.3.0
-
-  #下拉刷新
-  easy_refresh: ^3.4.0
 
 flutter:
   uses-material-design: true
