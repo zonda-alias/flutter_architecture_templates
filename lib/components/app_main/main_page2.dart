@@ -1,12 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_architecture_templates/components/app_main/main_page.dart';
-import 'package:flutter_architecture_templates/components/app_main/models/app_main_entities.dart';
-import 'package:flutter_architecture_templates/core/localization/localizations_extensions.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:flutter_lazy_indexed_stack/flutter_lazy_indexed_stack.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:collection/collection.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_architecture_templates/components/app_main/models/app_main_entities.dart';
+import 'package:flutter_lazy_indexed_stack/flutter_lazy_indexed_stack.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'controller/main_provider.dart';
 import 'widgets/main_bottom_bar_item.dart';
