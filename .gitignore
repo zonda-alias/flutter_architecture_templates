@@ -9,7 +9,6 @@
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
 
-
 # Flutter/Dart/Pub related
 **/doc/api/
 .dart_tool/
@@ -26,7 +25,6 @@ pubspec.lock
 
 android/app/release/
 
-
 # Directory created by dartdoc
 # If you don't generate documentation locally you can remove this line.
 doc/api/
@@ -40,12 +38,8 @@ doc/api/
 *.js.deps
 *.js.map
 
-
 # FVM during tests
-.fvm/*
-.fvm/flutter_sdk
 .vscode/settings.json
-
 
 .idea/
 .vagrant/
@@ -92,3 +86,5 @@ app.*.map.json
 *.g.dart
 *.gen.dart
 
+# FVM Version Cache
+.fvm/
